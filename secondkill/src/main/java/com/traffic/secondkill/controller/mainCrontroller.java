@@ -5,17 +5,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.traffic.secondkill.entity.User;
-import com.traffic.secondkill.redis.RedisConfig;
 import com.traffic.secondkill.redis.RedisService;
 import com.traffic.secondkill.redis.UserKey;
 import com.traffic.secondkill.result.Result;
 import com.traffic.secondkill.service.UserService;
 
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
 
 @RestController
 @RequestMapping("/main")
@@ -54,4 +51,20 @@ public class mainCrontroller {
     	User  user  = redisService.get(UserKey.getById, ""+1, User.class);
         return Result.success(user);
     }
+	
+
+    @RequestMapping(value="/to_login")
+    public String toLogin() {
+    	
+        return "login";
+    }
+    
+    @RequestMapping("/them")
+    public ModelAndView  them(ModelAndView  model) {
+    	model.setViewName("login");
+    	model.addObject("name","limingcong");
+    	return model;
+    }
+    
+    
 }
