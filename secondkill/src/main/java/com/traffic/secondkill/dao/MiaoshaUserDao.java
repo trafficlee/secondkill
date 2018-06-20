@@ -1,8 +1,10 @@
-package com.traffic.secondkill.controller;
+package com.traffic.secondkill.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+
+import com.traffic.secondkill.entity.MiaoshaUser;
 
 @Mapper
 public interface  MiaoshaUserDao {

@@ -7,7 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.traffic.secondkill.entity.MiaoshaUser;
 import com.traffic.secondkill.redis.RedisService;
+import com.traffic.secondkill.service.MiaoshaUserService;
 
 @Controller
 @RequestMapping("/goods")

@@ -17,8 +17,8 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
 import com.traffic.secondkill.controller.GoodsController;
-import com.traffic.secondkill.controller.MiaoshaUser;
-import com.traffic.secondkill.controller.MiaoshaUserService;
+import com.traffic.secondkill.entity.MiaoshaUser;
+import com.traffic.secondkill.service.MiaoshaUserService;
 
 @Component
 public class UserArgumentResolver implements HandlerMethodArgumentResolver{

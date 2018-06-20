@@ -1,4 +1,4 @@
-package com.traffic.secondkill.controller;
+package com.traffic.secondkill.service;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.traffic.secondkill.dao.MiaoshaUserDao;
 import com.traffic.secondkill.ecxetion.GlobalException;
+import com.traffic.secondkill.entity.MiaoshaUser;
 import com.traffic.secondkill.redis.MiaoshaUserKey;
 import com.traffic.secondkill.redis.RedisService;
 import com.traffic.secondkill.result.CodeMsg;

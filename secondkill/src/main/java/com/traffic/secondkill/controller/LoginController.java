@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.traffic.secondkill.redis.RedisService;
 import com.traffic.secondkill.result.Result;
+import com.traffic.secondkill.service.MiaoshaUserService;
 import com.traffic.secondkill.vo.LoginVo;
 
 @Controller

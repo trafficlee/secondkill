@@ -1,4 +1,4 @@
-package com.traffic.secondkill.controller;
+package com.traffic.secondkill.entity;
 
 import java.util.Date;
 
