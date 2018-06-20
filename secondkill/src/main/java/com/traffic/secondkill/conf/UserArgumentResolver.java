@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.support.WebDataBinderFactory;
 import org.springframework.web.context.request.NativeWebRequest;
@@ -19,7 +20,7 @@ import com.traffic.secondkill.controller.GoodsController;
 import com.traffic.secondkill.controller.MiaoshaUser;
 import com.traffic.secondkill.controller.MiaoshaUserService;
 
-@Service
+@Component
 public class UserArgumentResolver implements HandlerMethodArgumentResolver{
 
 	private static Logger log = LoggerFactory.getLogger(UserArgumentResolver.class);
