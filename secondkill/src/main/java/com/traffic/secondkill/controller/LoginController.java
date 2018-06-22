@@ -32,11 +32,6 @@ private static Logger log = LoggerFactory.getLogger(LoginController.class);
         return "login";
     }
     
-    @RequestMapping("/hello")
-    public String hello(Model model) {
-    	model.addAttribute("name","lsdfjdkasjfklasdfl");
-        return "hello";
-    }
     
     @RequestMapping("/do_login")
     @ResponseBody
